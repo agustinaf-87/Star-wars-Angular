@@ -1,34 +1,18 @@
-// .background{
-//     // background-image: url("../../../../assets/img/background.jpg");
-//     // background-size: cover;
-//     // background-repeat: no-repeat;
-//     // background-position: center;
-//     // overflow: hidden;
-//     // height: 80vh;
-//     // width: 100vw;
-// }
-
-// .title{
-//     font-family: "Raleway";
-//     color: #E55812;
-//     font-weight: bold;
-// }
-
-// .subtitle{
-//     font-family: "Raleway";
-//     color: #E55812;
-// }
-
 // * {
-//     margin: 0;
-//     // padding: 0;
-//     // border: 0;
-
-//     // &:before, &:after {
-//     //   box-sizing: inherit;
-//     // }
+//   margin: 0;
+//   padding: 0;
+//   border: 0;
+//   &:before, &:after {
+//     box-sizing: inherit;
 //   }
-.container {
+// }
+.goSmuggler{
+  background-color: #000;
+  font-family: "Raleway";
+  color: orange;
+  border: 1px solid black;
+}
+.contain-starwars {
     // box-sizing: border-box;
     background: black;
     width: 100vw;
@@ -66,7 +50,7 @@
       animation: moving 10s 23s infinite linear;
     }
   }
-  .container { 
+  .contain-starwars { 
     perspective: 800px;
       perspective-origin: 50% 100px;
     color: orange;
