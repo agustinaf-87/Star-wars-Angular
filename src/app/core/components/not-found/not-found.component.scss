@@ -1,0 +1,105 @@
+body{
+  width: 100%;
+  height: 100%;
+  } 
+  #container{
+    width: 1140px;
+    margin: 0 auto;
+  }
+  p{
+    font-family: helvetica;  
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 100px 0;
+    
+  }
+  #triangle{
+    width: 299px;
+    height: 140px;
+    position: relative;
+    margin: 0 auto;
+    animation: yay 2s infinite;
+  }
+  
+
+  
+  #tri-1{
+    height: 0px;
+    width: 0px;
+    border-bottom: 195px solid black;
+    border-left: 0px solid transparent;
+    border-right: 170px solid transparent;
+   transform: rotate(41deg);
+    position: absolute;
+    left: 50px;
+  }
+  #tri-1:after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    top: 160px;
+    box-shadow: 10px 30px 50px 0px #000000;
+    animation: 2s yayLeftShadow infinite;
+    background: none;
+  }
+  #tri-2{
+    width: 0px;
+    border-bottom: 195px solid #242424;
+    border-left: 170px solid transparent;
+    border-right: 0px solid transparent;
+    transform: rotate(-41deg);
+    position: absolute;
+    right: 80px;
+  }
+  #tri-2:after{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 30px;
+    top: 160px;
+    right: 0px;
+   box-shadow: -10px 30px 50px 0px #000000;
+   animation: 2s yayRightShadow infinite;
+    background: none;
+  }
+  @keyframes yay{
+      0%{
+          top: 0px;
+       }
+    50%{
+        top: -50px;
+    }
+    100%{
+        top: 0px;
+    }
+    
+  }
+  @keyframes yayLeftShadow{
+      0%{
+         -webkit-box-shadow: 10px 30px 50px 0px #000000; 
+      }
+      50%{
+        -webkit-box-shadow: 10px 5px 30px 0px #000000;
+        
+      }
+      100%{
+        -webkit-box-shadow: 10px 30px 50px 0px #000000;  
+      }
+    
+  }
+  @keyframes yayRightShadow{
+      0%{
+         -webkit-box-shadow: -10px 30px 50px 0px #000000; 
+      }
+      50%{
+        -webkit-box-shadow: -10px 5px 30px 0px #000000;
+        
+      }
+      100%{
+        -webkit-box-shadow: -10px 30px 50px 0px #000000;  
+      }
+    
+  }
+  

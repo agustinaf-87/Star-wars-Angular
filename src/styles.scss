@@ -52,7 +52,7 @@ $font-family-text: "Raleway", sans-serif;
 }
 
 @mixin card-smuggler-container() {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: whitesmoke;
     padding-top: 40px;
 
     .all-items {
@@ -73,7 +73,7 @@ $font-family-text: "Raleway", sans-serif;
     margin-bottom: 50px;
     border: 1px solid $primary;
     margin: 15px;
-    background: radial-gradient(circle, rgba(8, 7, 24, 1) 3%, rgba(14, 15, 8, 1) 44%, rgba(29, 83, 69, 1) 99%);
+    background: whitesmoke;
 
 
     &:hover {
@@ -106,8 +106,58 @@ $font-family-text: "Raleway", sans-serif;
         display: flex;
         justify-content: center;
         text-decoration: none;
-        color: whitesmoke
+        color: black;
+    }
+
+    .item-smuggler{
+        font-family: $font-family-text;
+        color:black;
+    }
+
+}
+
+@mixin animation() {
+
+    .stream_text {
+        position: absolute;
+        top: 23vh;
+        padding-left: 100%;
+        font-family: $font-family-text;
+        font-weight: 900;
+        font-size: 3vh;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        color: $primary;
+        animation: stream 10s infinite linear;
+
+        @media screen and (max-width: 768px) {
+            font-size: 2vh;
+        }
     }
 
 
+    .stream_text-delay {
+        color: $green;
+        animation-delay: 2.5s;
+        font-family: $font-family-text;
+        font-weight: 900;
+
+        @keyframes stream {
+            0% {
+                transform: translateX(0%)
+            }
+
+            100% {
+                transform: translateX(-130%)
+            }
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            font-size: 2vh;
+            animation-delay: 5s;
+        }
+
+    }
 }

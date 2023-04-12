@@ -6,15 +6,12 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{"namePlanet" | translate}}:  {{ planetDetail.namePlanet }}</h5>
+          <h5 class="card-title">{{ planetDetail.namePlanet }}</h5>
           <ul class="card-item-container">
             <li class="card-item"> {{"moons" | translate}}: {{ planetDetail.moons }}</li>
             <li class="card-item">  {{"suns" | translate}}: {{ planetDetail.suns }}</li>
           </ul>
           <app-button-go-back class="button-go-back"></app-button-go-back>
-          <a routerLink="planet">
-            <button type="button" class="button-access btn btn-light"> {{"goBack" | translate }} </button>
-          </a>
         </div>
       </div>
     </div>
