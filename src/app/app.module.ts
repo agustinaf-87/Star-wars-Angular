@@ -9,12 +9,20 @@ import { NavigationService } from './features/services/navigation-service.servic
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { SmugglerComponent } from './features/pages/smuggler/smuggler.component';
+import { SpacecraftDetailComponent } from './features/pages/spacecraft-detail/spacecraft-detail.component';
+import { PlanetDetailComponent } from './features/pages/planet-detail/planet-detail.component';
+import { SmugglerCardComponent } from './features/components/smuggler-card/smuggler-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     BreadcrumbComponent,
+    SmugglerComponent,
+    SpacecraftDetailComponent,
+    PlanetDetailComponent,
+    SmugglerCardComponent,
   ],
   imports: [
     BrowserModule,
