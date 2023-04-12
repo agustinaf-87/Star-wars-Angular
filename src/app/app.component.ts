@@ -8,5 +8,9 @@ import { NavigationService } from './features/services/navigation-service.servic
 })
 export class AppComponent {
   title = '1exam-vueling-2023';
-  constructor(public navigation: NavigationService){}
+  constructor(public navigation: NavigationService){
+    {
+      this.navigation.startSaveHistory();
+    }
+  }
 }
