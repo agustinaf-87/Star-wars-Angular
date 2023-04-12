@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './features/pages/home/home.component';
 import { SmugglerComponent } from './features/pages/smuggler/smuggler.component';
 import { SpacecraftDetailComponent } from './features/pages/spacecraft-detail/spacecraft-detail.component';
+import { PlanetDetailComponent } from './features/pages/planet-detail/planet-detail.component';
 // import { PlanetDetailComponent } from './features/pages/planet-detail/planet-detail.component';
 
 const routes: Routes = [
@@ -34,8 +35,13 @@ const routes: Routes = [
                 data: { breadcrumb: null },
                 component: SpacecraftDetailComponent,
               },
+              {
+                path: "planets",
+                component: PlanetDetailComponent,
+                data: { breadcrumb: "planets" },
+              },
             ]
-          }
+          },
         ]
       },
     ]
