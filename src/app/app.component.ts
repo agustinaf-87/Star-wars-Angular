@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from './features/services/navigation-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = '1exam-vueling-2023';
+  constructor(public navigation: NavigationService){}
 }
