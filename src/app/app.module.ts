@@ -13,6 +13,7 @@ import { SmugglerComponent } from './features/pages/smuggler/smuggler.component'
 import { SpacecraftDetailComponent } from './features/pages/spacecraft-detail/spacecraft-detail.component';
 import { PlanetDetailComponent } from './features/pages/planet-detail/planet-detail.component';
 import { SmugglerCardComponent } from './features/components/smuggler-card/smuggler-card.component';
+import { UiFooterModule } from 'ngx-ui-footer-af';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { SmugglerCardComponent } from './features/components/smuggler-card/smugg
         deps: [HttpClient],
       },
     }),
+    UiFooterModule,
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]
