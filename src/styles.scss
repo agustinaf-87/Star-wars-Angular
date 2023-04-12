@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+// @import "node_modules/ngx-ui-footer-af/src/assets/scss/library-styles.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$primary: red;
+$secondary: #050505;
+$tertiary: whitesmoke;
+$green: blue;
+
+$font-family-text: "Raleway", sans-serif;
+
+@mixin navbar {
+    height: 10vh;
+    margin-bottom: 8vh;
+    box-shadow: 0 2px 32px rgba(0, 0, 0, 0.2);
+
+    .navbar-brand {
+        margin-right: 20px;
+    }
+
+    .nav-link:hover {
+        border-radius: 5px;
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    .nav-item {
+        font-family: $font-family-text;
+        font-weight: 600;
+    }
+
+    .language-menu {
+        font-family: $font-family-text;
+        background-color: $secondary;
+        border-radius: 5px;
+    }
+
+    .form-language {
+
+        &:hover {
+            background-color: $secondary;
+            color: whitesmoke;
+        }
+    }
+
+}
