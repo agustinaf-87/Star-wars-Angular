@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { SmugglerService } from '../../services/smuggler.service';
 import { NavigationService } from '../../services/navigation-service.service';
 
 @Component({
@@ -9,5 +8,6 @@ import { NavigationService } from '../../services/navigation-service.service';
 })
 export class HomeComponent {
 
-  constructor(private smugglerService: SmugglerService, public navigation: NavigationService ) {}
+  constructor(
+    public navigation: NavigationService ) {}
 }

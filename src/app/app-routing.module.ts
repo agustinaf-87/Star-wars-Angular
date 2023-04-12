@@ -10,12 +10,14 @@ import { NotFoundComponent } from './core/components/not-found/not-found.compone
 const routes: Routes = [
 
   {
-    path: "",
-    // data: { breadcrumb: null },
+      path: "",
+    data: { breadcrumb: "home" },
     children: [
       {
         path: "",
-        data: { breadcrumb: "home"},
+        data: {
+          breadcrumb: null,
+        },
         component: HomeComponent,
       },
       {
@@ -53,47 +55,6 @@ const routes: Routes = [
       component: NotFoundComponent,
     },
   
-  //   path: "home",
-  //   data: { breadcrumb: "home" },
-  //   children: [
-  //     {
-  //       path: "",
-  //       data: {
-  //         breadcrumb: null,
-  //       },
-  //       component: HomeComponent,
-  //     },
-  //     {
-  //       path: "smugglers",
-  //       data: { breadcrumb: "smugglers"},
-  //       children: [
-  //         {
-  //           path: "",
-  //           data: { breadcrumb: null },
-  //           component: SmugglerComponent,
-  //         },
-  //         {
-  //           path: "spacecraft/:id",
-  //           data: { breadcrumb: "{{id}}" },
-  //           children: [
-  //             {
-  //               path: "",
-  //               data: { breadcrumb: null },
-  //               component: SpacecraftDetailComponent,
-  //             },
-  //             {
-  //               path: "planet",
-  //               component: PlanetDetailComponent,
-  //               data: { breadcrumb: "planet" },
-  //             },
-  //           ],
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // { path: "", redirectTo: "home", pathMatch: "full" }, // redirect to `first-component`
-  // // { path: "**", component: NotFoundComponent }, // Wildcard route for a 404 page
 ];
 
 

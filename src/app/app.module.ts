@@ -17,6 +17,7 @@ import { UiFooterModule } from 'ngx-ui-footer-af';
 import { ButtonGoBackComponent } from './shared/button-go-back/button-go-back.component';
 import { NotFoundComponent } from './core/components/not-found/not-found.component';
 import { NavBarAnimationComponent } from './features/components/nav-bar-animation/nav-bar-animation.component';
+import { HomeComponent } from './features/pages/home/home.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { NavBarAnimationComponent } from './features/components/nav-bar-animatio
     SmugglerCardComponent,
     ButtonGoBackComponent,
     NotFoundComponent,
-    NavBarAnimationComponent
+    NavBarAnimationComponent,
+    HomeComponent
    
   ],
   imports: [
@@ -45,9 +47,11 @@ import { NavBarAnimationComponent } from './features/components/nav-bar-animatio
       },
     }),
     UiFooterModule,
+
   ],
   providers: [NavigationService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+ 
 })
 export class AppModule { }
 
