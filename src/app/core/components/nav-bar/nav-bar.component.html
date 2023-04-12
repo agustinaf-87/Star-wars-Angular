@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/player-home">
+            <img src="../../assets/img/fifaLogo.png" alt="logo" width="100" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="home">home</a> 
+                </li>
+            </ul>
+            <div class="language-menu ms-auto">
+                <div class="multiButton">
+                    <select class="form-language" #selectedLang (change)="switchLanguage(selectedLang.value)">
+                        <option class="item-lang" *ngFor="let language of translate.getLangs()" [value]="language"
+                        [selected]="language === translate.currentLang" class="select-option"> {{ language }} </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
