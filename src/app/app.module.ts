@@ -15,6 +15,9 @@ import { PlanetDetailComponent } from './features/pages/planet-detail/planet-det
 import { SmugglerCardComponent } from './features/components/smuggler-card/smuggler-card.component';
 import { UiFooterModule } from 'ngx-ui-footer-af';
 import { ButtonGoBackComponent } from './shared/button-go-back/button-go-back.component';
+import { NotFoundComponent } from './core/components/not-found/not-found.component';
+import { NavBarAnimationComponent } from './features/components/nav-bar-animation/nav-bar-animation.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ButtonGoBackComponent } from './shared/button-go-back/button-go-back.co
     SpacecraftDetailComponent,
     PlanetDetailComponent,
     SmugglerCardComponent,
-    ButtonGoBackComponent
+    ButtonGoBackComponent,
+    NotFoundComponent,
+    NavBarAnimationComponent
+   
   ],
   imports: [
     BrowserModule,

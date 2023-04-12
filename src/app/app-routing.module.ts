@@ -4,6 +4,7 @@ import { HomeComponent } from './features/pages/home/home.component';
 import { SmugglerComponent } from './features/pages/smuggler/smuggler.component';
 import { SpacecraftDetailComponent } from './features/pages/spacecraft-detail/spacecraft-detail.component';
 import { PlanetDetailComponent } from './features/pages/planet-detail/planet-detail.component';
+import { NotFoundComponent } from './core/components/not-found/not-found.component';
 // import { PlanetDetailComponent } from './features/pages/planet-detail/planet-detail.component';
 
 const routes: Routes = [
@@ -46,11 +47,11 @@ const routes: Routes = [
       },
     ]
   },
-  // {
-  //     path: '**',
-  //     data: { breadcrumb: 'error' },
-  //     component: NotFoundComponent,
-  //   },
+  {
+      path: '**',
+      data: { breadcrumb: 'error' },
+      component: NotFoundComponent,
+    },
   
   //   path: "home",
   //   data: { breadcrumb: "home" },

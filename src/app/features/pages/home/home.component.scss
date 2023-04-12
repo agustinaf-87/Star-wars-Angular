@@ -8,13 +8,159 @@
 //     // width: 100vw;
 // }
 
-.title{
-    font-family: "Raleway";
-    color: #E55812;
-    font-weight: bold;
-}
+// .title{
+//     font-family: "Raleway";
+//     color: #E55812;
+//     font-weight: bold;
+// }
 
-.subtitle{
-    font-family: "Raleway";
-    color: #E55812;
-}
+// .subtitle{
+//     font-family: "Raleway";
+//     color: #E55812;
+// }
+
+// * {
+//     margin: 0;
+//     // padding: 0;
+//     // border: 0;
+
+//     // &:before, &:after {
+//     //   box-sizing: inherit;
+//     // }
+//   }
+.container {
+    // box-sizing: border-box;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .planet {
+    transform-style: preserve-3d;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: radial-gradient(circle at 40px 40px, #5cabff, #000);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translateY(100vh);
+    animation: planet 6s 23s;
+    
+    // below for debugging
+    // transform: translateY(0);
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      background: url('http://hop.ie/balls/images/world-map-one-color.png') no-repeat center center / auto 100%;
+      
+      animation: moving 10s 23s infinite linear;
+    }
+  }
+  .container { 
+    perspective: 800px;
+      perspective-origin: 50% 100px;
+    color: orange;
+    position: relative;
+    
+    //STARS
+    &:before {
+      content: '';
+      width: 2px;
+      height: 2px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 2px;
+      opacity: .6;
+      animation-name: starwars-fade;
+      animation-duration: 3s;
+      animation-delay: 23s;
+    }
+  }
+  .roll {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 5em;
+    opacity: 0;
+    
+    transform-style: preserve-3d;
+    animation: starwars 30s;
+      transform-origin: bottom center;
+  }
+  h1 {
+    font-size: 60vw;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 800;
+    line-height: .8;
+  }
+  p {
+    font-size: 3rem;
+    line-height: 2;
+    text-align: justify;
+  }
+  @keyframes starwars {
+    0% {
+      transform: rotateX(90deg) translateY(100%);
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    90% {
+      transform:  rotateX(90deg)translateY(-500%);
+    opacity: 0;
+    };
+  }
+  @keyframes starwars-fade {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: -400px;
+    }
+  }
+  @keyframes planet {
+    0% {
+      transform: translateY(100vh);
+    }
+    50%, 100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes moving {
+    0% {
+      background-position: -600px 0
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  @function multiple-box-shadow ($n)  {
+    $value: '#{random(2000)}px #{random(2000)}px #FFF';
+    @for $i from 2 through $n {
+      $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+    }
+  
+    @return unquote($value)
+  }
+  
+  .container {
+    &::before {
+      box-shadow: multiple-box-shadow(700);
+    }
+  }
+  
