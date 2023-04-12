@@ -8,14 +8,14 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{ spacecraftFeatures.shipName }}</h5>
+          <h5 class="card-title"> {{"shipName" | translate}}: {{ spacecraftFeatures.shipName }}</h5>
           <ul class="card-item-container">
-            <li class="card-item"> {{ spacecraftFeatures.model }}</li>
-            <li class="card-item">  {{ spacecraftFeatures.manufacturer }}</li>
+            <li class="card-item">  {{"model" | translate}}: {{ spacecraftFeatures.model }}</li>
+            <li class="card-item"> {{"manufacturer" | translate}}: {{ spacecraftFeatures.manufacturer }}</li>
           </ul>
           <app-button-go-back class="button-go-back"></app-button-go-back>
           <a routerLink="planet">
-            <button type="button" class="button-access btn btn-light">Go Back</button>
+            <button type="button" class="button-access btn btn-light">{{"goBack" | translate }} </button>
           </a>
         </div>
       </div>
