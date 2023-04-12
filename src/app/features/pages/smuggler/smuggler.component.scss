@@ -1,0 +1,9 @@
+.card-smuggler-container{
+    @include card-player-container()
+    
+}
+
+.row{
+    @include row()
+}
+

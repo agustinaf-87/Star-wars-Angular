@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SmugglerService } from '../../services/smuggler.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+
+  constructor(private smugglerService: SmugglerService) {}
 }

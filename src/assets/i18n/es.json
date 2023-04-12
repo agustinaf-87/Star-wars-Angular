@@ -1,0 +1,23 @@
+{
+    "header1": "Inicio",
+    "header2": "Inicio",
+    "header3": "Inicio",
+    "animation1": "¡Empecemos, elige tu jugador!",
+    "animation2": "click aquí para ver su historial",
+    "goBackBtn": "Atrás",
+    "playerVideosBtn": "Ver Videos",
+    "overall": "Promedio",
+    "pace": "Ritmo",
+    "shoot": "Chute",
+    "pass": "Pases",
+    "dribbling": "Filigranas",
+    "defense": "Defensa",
+    "physic": "Físico",
+    "team": "Equipo",
+    "years": "Años",
+    "logo": "Escudo",
+    "videos": "videos",
+    "features": "detalles",
+    "home": "inicio",
+    "history": "historial"
+}
