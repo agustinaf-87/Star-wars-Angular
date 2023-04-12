@@ -14,6 +14,7 @@ import { SpacecraftDetailComponent } from './features/pages/spacecraft-detail/sp
 import { PlanetDetailComponent } from './features/pages/planet-detail/planet-detail.component';
 import { SmugglerCardComponent } from './features/components/smuggler-card/smuggler-card.component';
 import { UiFooterModule } from 'ngx-ui-footer-af';
+import { ButtonGoBackComponent } from './shared/button-go-back/button-go-back.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { UiFooterModule } from 'ngx-ui-footer-af';
     SpacecraftDetailComponent,
     PlanetDetailComponent,
     SmugglerCardComponent,
+    ButtonGoBackComponent
   ],
   imports: [
     BrowserModule,

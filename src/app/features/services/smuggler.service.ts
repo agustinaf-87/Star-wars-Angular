@@ -19,7 +19,7 @@ export class SmugglerService {
     return of (smuggler);
   }
 
-  // public getPlayerTeams(playerId: number): string[] {
+  // public getTeams(playerId: number): string[] {
   //   const player: IPlayer | undefined = PlayerList.find(
   //     (p) => p.id === playerId
   //   );
