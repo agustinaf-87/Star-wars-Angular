@@ -1,1 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+// @import "node_modules/ngx-ui-footer-af/src/assets/scss/library-styles.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$primary: red;
+$secondary: #050505;
+$tertiary: whitesmoke;
+$green: blue;
+
+$font-family-text: "Raleway", sans-serif;
+
+@mixin navbar {
+    height: 10vh;
+    margin-bottom: 8vh;
+    box-shadow: 0 2px 32px rgba(0, 0, 0, 0.2);
+
+    .navbar-brand {
+        margin-right: 20px;
+    }
+
+    .nav-link:hover {
+        border-radius: 5px;
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    .nav-item {
+        font-family: $font-family-text;
+        font-weight: 600;
+    }
+
+    .language-menu {
+        font-family: $font-family-text;
+        background-color: $secondary;
+        border-radius: 5px;
+    }
+
+    .form-language {
+
+        &:hover {
+            background-color: $secondary;
+            color: whitesmoke;
+        }
+    }
+
+}
+
+@mixin card-smuggler-container() {
+    background-color: whitesmoke;
+    padding-top: 40px;
+
+    .all-items {
+        justify-content: center;
+    }
+
+}
+
+@mixin row() {
+    align-content: center;
+    margin: 30px;
+}
+
+@mixin card() {
+
+    font-family: $font-family-text;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 1px solid $primary;
+    margin: 15px;
+    background: whitesmoke;
+
+
+    &:hover {
+        cursor: pointer;
+    }
+
+
+    .card-container:hover,
+    .card-container:focus-within {
+        transform: scale(1.05);
+        border-radius: 5px;
+        box-shadow: 9px -12px 15px -8px rgba(149, 198, 35, 0.75);
+    }
+
+
+    .card-container {
+        overflow: hidden;
+        transition: transform 500ms ease;
+
+    }
+
+
+    .card-title,
+    a {
+        font-family: $font-family-text;
+        margin-top: 15px;
+        font-size: 1em;
+        font-weight: bolder;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .item-smuggler{
+        font-family: $font-family-text;
+        color:black;
+    }
+
+}
+
+@mixin animation() {
+
+    .stream_text {
+        position: absolute;
+        top: 23vh;
+        padding-left: 100%;
+        font-family: $font-family-text;
+        font-weight: 900;
+        font-size: 3vh;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        color: $primary;
+        animation: stream 10s infinite linear;
+
+        @media screen and (max-width: 768px) {
+            font-size: 2vh;
+        }
+    }
+
+
+    .stream_text-delay {
+        color: $green;
+        animation-delay: 2.5s;
+        font-family: $font-family-text;
+        font-weight: 900;
+
+        @keyframes stream {
+            0% {
+                transform: translateX(0%)
+            }
+
+            100% {
+                transform: translateX(-130%)
+            }
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            font-size: 2vh;
+            animation-delay: 5s;
+        }
+
+    }
+}

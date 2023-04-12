@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card ">
+                <div class="card-container">
+                    <h5 class="card-title text-center">{{smugglers.name}} </h5>
+                    <ul>
+                        <li class="item-smuggler text-center" > {{"birthPlanet" | translate}}: {{smugglers.birthPlanet}}</li>
+                        <li class="item-smuggler text-center"> {{"birthDay" | translate}}: {{smugglers.birthDay}}</li>
+                    </ul>
+                    <a class="card-img-top-link" routerLink="spacecraft/{{smugglers.id}}"><img class="card-img-top"
+                            src="{{smugglers.image}}" alt="player-image"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

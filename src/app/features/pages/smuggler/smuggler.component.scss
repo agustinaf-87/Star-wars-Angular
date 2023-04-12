@@ -1,0 +1,11 @@
+@import "../../../../styles.scss";
+
+.card-smuggler-container{
+    @include card-smuggler-container()
+    
+}
+
+.row{
+    @include row()
+}
+

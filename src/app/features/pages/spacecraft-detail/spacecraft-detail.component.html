@@ -1,0 +1,18 @@
+
+<div class="card mb-3" style="max-width: 800px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <a class="card-img-top-link" routerLink="planets">
+        <img src="{{spacecraftFeatures.imageSpacecraft}} " class="img-fluid rounded-start" alt="smuggler-space-ship"> 
+    </a>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"> {{ spacecraftFeatures.shipName }}</h5>
+            <p class="card-item">  {{"model" | translate}}: {{ spacecraftFeatures.model}}</p>
+            <p class="card-item"> {{"manufacturer" | translate}}: {{ spacecraftFeatures.manufacturer }}</p>
+          <app-button-go-back class="button-go-back"></app-button-go-back>
+        </div>
+      </div>
+    </div>
+  </div>

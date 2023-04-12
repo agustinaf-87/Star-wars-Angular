@@ -1,0 +1,19 @@
+
+<div class="card mb-3" style="max-width: 800px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{planetDetail.imagePlanet}} " class="img-fluid rounded-start" alt="smuggler-planet"> 
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ planetDetail.namePlanet }}</h5>
+          <ul class="card-item-container">
+            <li class="card-item"> {{"moons" | translate}}: {{ planetDetail.moons }}</li>
+            <li class="card-item">  {{"suns" | translate}}: {{ planetDetail.suns }}</li>
+          </ul>
+          <app-button-go-back class="button-go-back"></app-button-go-back>
+        </div>
+      </div>
+    </div>
+  </div>
+

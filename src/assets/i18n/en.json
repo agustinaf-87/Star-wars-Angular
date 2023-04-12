@@ -1,0 +1,16 @@
+{
+    "sumgglers": "See the Smugglers",
+    "animation1": "Smugglers, ¡DANGER!", 
+    "header1":"Home",
+    "welcome": "Welcome",
+    "goBack": "Go Back",
+    "name": "Name",
+    "birthPlanet": "Origin Planet",
+    "birthDay": "Birth Date",
+    "shipName": "Spacecraft Name",
+    "model": "Model",
+    "manufacturer": "Manufacturer",
+    "namePlanet": "Planet Name",
+    "moons": "Moon number",
+    "suns": "Sun number"
+}
