@@ -159,7 +159,7 @@ Agustina Elena Fernández
 <!-- CONTACT -->
 ## Contact Information
 
-fernandes.agustinaelena@email_client.com
+fernandes.agustinaelena@gmail.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
