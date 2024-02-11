@@ -1,4 +1,4 @@
-# 1examVueling2023
+# Angular Star Wars Project
 
 <a name="readme-top"></a>
 
@@ -7,7 +7,7 @@
 <div align="center">
   <a href="https://github.com/agustinaf-87">
 
-<h3 align="center">Vueling University Angular </h3>
+<h3 align="center">Angular Star Wars Project</h3>
 
   <p align="center">
     Exam
@@ -37,19 +37,16 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">More about the exam</a></li>
+    <li><a href="#roadmap">More about the project</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Exam
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+## About The Project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,8 +108,7 @@ This library helps you to to implement multilingual support in an Angular applic
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This project is intented for an exam for Vueling Angular University
-
+This project is intented for practise with Anguar
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -166,16 +162,6 @@ Agustina Elena Fernández
 fernandes.agustinaelena@email_client.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* Special Thanks to my awsome Angular team!     
-<img src="./assets/img/angular-team.jpeg" alt="angular-team">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
